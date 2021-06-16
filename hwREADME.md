@@ -11,3 +11,5 @@ Cool CSS things: Opacity on all images, z-indexing to overlay the app links, res
 Other things: All images are from my life as a professional musician. The figure under the header was an exercise I completed with students in my Music Theory class. All others are from concerts or photoshoots for promotional materials.
 
 Contact Info: scotty.d.phillips@gmail.com
+
+Screenshot: ![](/assets/images/screencapture-127-0-0-1-5500-index-html-2021-06-15-21_02_33.png)
