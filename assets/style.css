@@ -1,0 +1,235 @@
+:root {
+	--garnet: #782f40;
+	--navy: #003057;
+	--white: #fff;
+	--gold: #ceb888;
+}
+
+* {
+	background-color: var(--white);
+	font-family: 'Jost', sans-serif;
+}
+
+body {
+	color: var(--white);
+	display: flex; /*Preparing flex*/
+	flex-wrap: wrap;
+}
+
+header {
+	background-color: var(--garnet);
+	width: 100%;
+}
+
+header h1 {
+	color: var(--gold);
+	background-color: var(--garnet);
+	text-align: left;
+	font-size: 26pt;
+	margin-left: 2%;
+	display: inline;
+}
+
+nav {
+	background-color: var(--garnet);
+	width: 100%;
+	display: inline;
+}
+
+nav a {
+	float: right;
+	background-color: var(--garnet);
+	color: var(--white);
+	text-decoration: none;
+	font-size: 14pt;
+	margin-right: 2%;
+}
+/*Color change and shadow when hovering*/
+nav a:hover {
+	color: var(--gold);
+	text-shadow: 5px 5px 5px var(--navy);
+}
+
+figure {
+	position: relative;
+}
+/*Opacity to blur image and decrease focal point*/
+figure img {
+	width: 100%;
+	opacity: 40%;
+}
+
+figcaption {
+	color: var(--navy);
+	background-color: var(--gold);
+	float: right;
+	font-size: 22pt;
+	font-weight: bolder;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin-right: 2%;
+}
+
+aside {
+	flex: auto;
+	clear: both;
+	left: 0;
+	border-right: 0.25vw solid var(--navy);
+	padding-right: 0.25vw solid var(--navy);
+	margin-right: 0.25vw solid var(--navy);
+}
+
+aside h2 {
+	color: var(--navy);
+	font-size: 20pt;
+	font-weight: bold;
+	margin-bottom: 22%;
+}
+
+aside h2:hover {
+	color: var(--garnet);
+	text-shadow: 5px 5px 5px var(--navy);
+}
+
+section {
+	display: flex;
+	flex: 7 0 0;/*Creating section dimensions*/
+	flex-wrap: wrap;
+	float: right;
+	width: 75%;
+}
+
+section p {
+	color: var(--garnet);
+	flex-wrap: wrap;
+}
+/* Creates the container for the large image */
+.wrapper {
+	position: relative;
+	display: flex;
+}
+
+/* Creates the container for the small images */
+.siwrapper {
+	position: relative;
+	display: flex;
+	width: 50%;
+}
+
+.sdplargeimage {
+	width: 100%;
+	border: 0.5vw solid var(--garnet);
+	padding: 0.5vw solid var(--garnet);
+	flex-wrap: wrap;
+	opacity: 25%;
+	z-index: 0; /*Puts image behind text box*/ 
+}
+
+.sdplargeimage:hover {
+	opacity: 100%; /*Set to clear up when hovered over using opacity*/
+}
+
+.imagetextbox {
+	display: block;
+	background-color: var(-gold);
+	bottom: 5%;
+	border: 0.25vw solid var(--navy);
+	padding: 0.25vw solid var(--navy);
+	opacity: 50%;
+	position: absolute;
+	bottom: 5%;
+	left: 0.5vw;
+}
+
+.imagetextbox h4 {
+	color: var(--navy);
+	background-color: var(--gold);
+	font-size: 150%;
+}
+
+.imagetextbox p {
+	color: var(--navy);
+	background-color: var(--gold);
+	font-size: 111%;
+}
+
+.imagetextbox:hover {
+	opacity: 100%;/*Same as above hovers*/
+}
+
+.smallimages {
+	display: inline-flexbox;
+	flex-wrap: wrap;
+	width: 100%;
+	opacity: 25%;
+	border: 0.5vw solid var(--gold);
+	padding: 0.5vw solid var(--gold);
+}
+
+.smallimages:hover {
+	opacity: 100%;  /* Clears up when hovered over */
+}
+
+footer {
+	clear: both;
+	background-color: var(--garnet);
+	width: 100%;
+	height: 100%;
+	border-bottom: var(--garnet);
+	padding-bottom: var(--garnet);
+	margin-bottom: var(--garnet);
+}
+
+footer h2 {
+	color: var(--gold);
+	background-color: var(--garnet);
+	font-size: 20pt;
+	font-weight: bold;
+	margin-left: 5%;
+	margin-bottom: 2%;
+}
+
+.footertext {
+	display: inline;
+	background-color: var(--garnet);
+	color: var(--gold);
+	text-decoration: none;
+	bottom: 5%;
+	font-size: 14pt;
+	margin-right: 2%;
+	margin-left: 5%;
+	padding: var(--garnet);
+	margin-bottom: var(--garnet);
+}
+/*Change color and shadow when hovering*/
+footer a:hover {
+	color: var(--white);
+	text-shadow: 50% 50% 100% var(--navy);
+}
+
+/* Responsive features */
+@media screen and (max-width: 768px) {
+	nav {
+		float: center;
+	}
+	body {
+		width: 100%;
+	}
+	.siwrapper {
+		width: 60%;
+	}	
+}
+
+@media screen and (max-width: 992px) {
+	nav {
+		float: center;
+	}
+	body {
+		width: 100%;
+	}
+	.siwrapper {
+		width: 60%;
+	}
+}
