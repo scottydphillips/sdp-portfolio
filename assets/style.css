@@ -146,6 +146,7 @@ section p {
 .imagetextbox h4 {
 	color: var(--navy);
 	background-color: var(--gold);
+	text-decoration: none;
 	font-size: 150%;
 }
 
@@ -157,6 +158,7 @@ section p {
 
 .imagetextbox:hover {
 	opacity: 100%;/*Same as above hovers*/
+	cursor: pointer;
 }
 
 .smallimages {
