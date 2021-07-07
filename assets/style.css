@@ -168,6 +168,10 @@ section p {
 	opacity: 100%;/*Same as above hovers*/
 }
 
+.imagetextbox a:hover {
+	color: var(--garnet);
+}
+
 .smallimages {
 	display: inline-flexbox;
 	flex-wrap: wrap;
@@ -206,7 +210,7 @@ footer h2 {
 }
 
 .footertext {
-	display: inline;
+	display:inline-flex;
 	background-color: var(--garnet);
 	color: var(--gold);
 	text-decoration: none;
@@ -214,8 +218,8 @@ footer h2 {
 	font-size: 14pt;
 	margin-right: 2%;
 	margin-left: 5%;
-	padding: var(--garnet);
-	margin-bottom: var(--garnet);
+	padding: 3rem var(--garnet);
+	margin-bottom: 3rem var(--garnet);
 }
 /*Change color and shadow when hovering*/
 footer a:hover {
