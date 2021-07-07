@@ -134,31 +134,38 @@ section p {
 .imagetextbox {
 	display: block;
 	background-color: var(-gold);
+	height: auto;
 	bottom: 5%;
 	border: 0.25vw solid var(--navy);
 	padding: 0.25vw solid var(--navy);
 	opacity: 50%;
 	position: absolute;
-	bottom: 5%;
 	left: 0.5vw;
+	background-color: (var(--gold));
+}
+
+.imagetextbox a {
+	color: var(--navy);
+	background-color: transparent;
+	font-size: 150%;
+	cursor: pointer;
 }
 
 .imagetextbox h4 {
 	color: var(--navy);
-	background-color: var(--gold);
-	text-decoration: none;
+	background-color: transparent;
 	font-size: 150%;
 }
 
 .imagetextbox p {
 	color: var(--navy);
-	background-color: var(--gold);
+	background-color: transparent;
+	text-decoration: none;
 	font-size: 111%;
 }
 
 .imagetextbox:hover {
 	opacity: 100%;/*Same as above hovers*/
-	cursor: pointer;
 }
 
 .smallimages {
@@ -172,6 +179,11 @@ section p {
 
 .smallimages:hover {
 	opacity: 100%;  /* Clears up when hovered over */
+}
+
+.github-repo-link {
+	color: var(--navy);
+	font-size: 95%;
 }
 
 footer {
