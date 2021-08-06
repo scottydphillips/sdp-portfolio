@@ -173,7 +173,7 @@ section p {
 }
 
 .smallimages {
-	display: inline-flexbox;
+	display: inline-flex;
 	flex-wrap: wrap;
 	width: 100%;
 	opacity: 25%;
